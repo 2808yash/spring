@@ -32,7 +32,7 @@ public class CartController {
     public String delete(@PathVariable Integer id){
         cartService.delete(id);
         return "Deleted cart with id "+id;
-    }   
+    }    
 
     @PutMapping("/{id}")
     public ResponseEntity<Cart> update(@RequestBody Cart cart,@PathVariable Integer id){
